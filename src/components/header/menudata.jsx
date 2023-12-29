@@ -24,7 +24,7 @@ const MenuData = ({ id, val, setFun }) => {
           <>
             <div
               style={{
-                flex: '0.5',
+                flex: '0.7',
                 display: 'flex',
                 alignItems: 'center',
                 fontSize: '16px',
@@ -32,6 +32,7 @@ const MenuData = ({ id, val, setFun }) => {
                 letterSpacing: '2px',
                 fontWeight: '700',
                 fontFamily: 'Helvetica, Arial, sans-serif',
+                paddingLeft: '4px',
               }}
             >
               {data[0]['b1']['name'].toUpperCase()}
@@ -68,7 +69,7 @@ const MenuData = ({ id, val, setFun }) => {
                   fontSize: '19.008px',
                   color: '#A20FB7',
                   borderBottom: '1px solid lightgray',
-                  padding: '20px 10px 20px 10px',
+                  padding: '20px 10px 20px 0px',
                 }}
               >
                 {data[0]['b1']['name_exp']}
