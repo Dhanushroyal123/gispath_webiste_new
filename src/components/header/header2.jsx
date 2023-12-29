@@ -20,7 +20,7 @@ const Navbar = () => {
     <>
       <div className='navbar'>
         <div className='brand-logo'>
-          <img src={logo} width='120px' alt='' />
+          <img src={logo} width='130px' alt='' />
         </div>
         <div className='menu'>
           {menuItems.map((each) => {
