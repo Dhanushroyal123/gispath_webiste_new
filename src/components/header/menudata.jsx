@@ -22,27 +22,57 @@ const MenuData = ({ id, val, setFun }) => {
       <div className='minner1'>
         {data.length !== 0 ? (
           <>
-            <div style={{ flex: '0.5', padding: '20px 0px 20px 0px' }}>
-              {data[0]['b1']['name']}
+            <div
+              style={{
+                flex: '0.5',
+                display: 'flex',
+                alignItems: 'center',
+                fontSize: '16px',
+                color: '#A20FB7',
+                letterSpacing: '2px',
+                fontWeight: '700',
+                fontFamily: 'Helvetica, Arial, sans-serif',
+              }}
+            >
+              {data[0]['b1']['name'].toUpperCase()}
             </div>
             <div
               style={{
                 flex: '2',
-                padding: '10px 0px 10px 0px',
+                display: 'flex',
+                alignItems: 'center',
               }}
             >
-              <h1
+              <span
                 style={{
                   fontWeight: '400',
                   fontFamily: 'Helvetica, Arial, sans-serif',
                   color: '#0D016B',
+                  fontSize: '32px',
+                  lineHeight: '40px',
                 }}
               >
                 {data[0]['b1']['content']}
-              </h1>
+              </span>
             </div>
-            <div style={{ flex: '1', padding: '20px 0px 20px 0px' }}>
-              {data[0]['b1']['name_exp']}
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                flex: '1',
+              }}
+            >
+              <span
+                style={{
+                  fontWeight: '700',
+                  fontSize: '19.008px',
+                  color: '#A20FB7',
+                  borderBottom: '1px solid lightgray',
+                  padding: '20px 10px 20px 10px',
+                }}
+              >
+                {data[0]['b1']['name_exp']}
+              </span>
             </div>
             <div style={{ flex: '1' }}></div>
             <div style={{ flex: '1' }}></div>
@@ -86,27 +116,28 @@ const MenuData = ({ id, val, setFun }) => {
                 flex: '1',
                 display: 'flex',
                 alignItems: 'center',
-                fontSize: '15px',
-                fontWeight: '700',
-                color: '#A20FB7',
-                fontFamily: 'Helvetica, Arial, sans-serif',
-                fontStretch: '100%',
-                letterSpacing: '1px',
                 padding: '20px 0px 20px 0px',
+                fontSize: '16px',
+                color: '#A20FB7',
+                letterSpacing: '2px',
+                fontWeight: '700',
+                fontFamily: 'Helvetica, Arial, sans-serif',
               }}
             >
               {data[0]['b3']['first_service'].toUpperCase()}
             </div>
             <div style={{ flex: '1' }}>
-              <h1
+              <span
                 style={{
                   fontWeight: '400',
                   fontFamily: 'Helvetica, Arial, sans-serif',
                   color: '#0D016B',
+                  fontSize: '32px',
+                  lineHeight: '40px',
                 }}
               >
                 {data[0]['b1']['content']}
-              </h1>
+              </span>
             </div>
             <div style={{ flex: '1' }}></div>
             <div style={{ flex: '1' }}></div>

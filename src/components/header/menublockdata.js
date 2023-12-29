@@ -19,7 +19,7 @@ const data = [
     ],
     b3: {
       first_service: 'Staffing',
-      image: staffingpic,
+      image: aboutus,
       content:
         'We focus on Reliable Employees, Quality Relationships, Strategic Partnerships',
       status: true,
@@ -37,7 +37,7 @@ const data = [
     b2: ['Overview', 'Leadership', 'News Room'],
     b3: {
       first_service: 'Overview',
-      image: aboutus,
+      image: staffingpic,
       content:
         'Global Enterprises to be Future-Ready with a Generative AI Centre of Excellence',
       status: true,
