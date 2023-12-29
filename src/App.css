@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    margin: 0px;
+    padding: 0px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  body {
+    background-color: rgb(222, 222, 222);
   }
-  to {
-    transform: rotate(360deg);
+  
+  
+  .hamburger-icon {
+    display: none;
   }
-}
+  
+  .logo {
+    display: flex;
+    flex: 1;
+    height: 100px;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  #logo_img {
+    width: 160px;
+    height: 100px;
+  }
+  
+  .between {
+    flex: 1;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+    height: 100px;
+  }
+  
+  .mitem {
+    flex: 5;
+  
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px 40px 0px;
+  
+    margin-left: 20px;
+  }
+  
+  .ullist {
+    display: flex;
+    width: 750px;
+    height: 101px;
+    align-items: center;
+  }
+  .menublock {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+  }
+  .menublockinside {
+    display: flex;
+    border-top: 1px solid #d3d3d3;
+    width: 1370px;
+    height: 380px;
+  }
+  .leftMblock {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 380px;
+  }
+  .middleMblock {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 380px;
+  }
+  
+  .rightMblock {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 380px;
+    justify-content: right;
+  }
+  .block2text {
+    color: #0d016b;
+    font-weight: 500;
+  }
+  .block2text:hover {
+    transform: 2s;
+    color: #a20fc2;
+  }
+  @media only screen and (max-width: 480px) {
+    .ullist {
+      display: none;
+    }
+  
+    #logo_img {
+      width: 130px;
+      height: 80px;
+    }
+    .logo {
+      align-items: center;
+    }
+  
+    .hamburger-icon {
+      flex: 1;
+      display: block;
+    }
+    .menublock {
+      border-top: 1px solid #d3d3d3;
+      width: 100%;
+      height: 450px;
+      background-color: white;
+    }
+    .menublock {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .ullist {
+      display: none;
+    }
+  
+    #logo_img {
+      width: 130px;
+      height: 80px;
+    }
+    .logo {
+      align-items: center;
+    }
+    .hamburger-icon {
+      flex: 1;
+      display: block;
+    }
+    .menublock {
+      display: none;
+    }
+  }
+  

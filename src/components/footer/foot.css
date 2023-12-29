@@ -1,0 +1,175 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Geomanist, Helvetica, Arial, sans-serif;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 810px;
+  background-color: #0d016b;
+  padding: 50px 100px 0px 100px;
+}
+
+.innerfooter {
+  display: flex;
+}
+
+.f1 {
+  flex: 2;
+  height: 600px;
+  margin: 15px;
+}
+
+.f2 {
+  flex: 1;
+  height: 600px;
+  margin: 15px;
+}
+
+.f3 {
+  flex: 1;
+  height: 600px;
+  margin: 15px;
+}
+
+.f11 {
+  margin: 10px;
+}
+
+.f11 h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffffff;
+  padding-right: 150px;
+  letter-spacing: 1px;
+}
+
+.socialM {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: #4a4190;
+  border-radius: 100px;
+  margin: 0px 8px 0px 8px;
+  cursor: pointer;
+}
+
+.socialM:hover {
+  background-color: orange;
+}
+
+.f22 {
+  flex: 1;
+}
+
+.f22 h4 {
+  color: #ffffff;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.f22 h4:hover {
+  color: orange;
+}
+
+.f33 {
+  flex: 1;
+}
+
+.f33 h4 {
+  color: #ffffff;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.f33 h4:hover {
+  color: orange;
+}
+
+.footdown {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fd1 h4 {
+  color: white;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer {
+    padding: 0px;
+    height: 1500px;
+  }
+  .innerfooter {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 0px;
+    height: 1500px;
+  }
+  .innerfooter {
+    flex-direction: column;
+  }
+
+  .f11 h3 {
+    font-family: Geomanist, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #ffffff;
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .footer {
+    padding: 0px;
+    height: 1500px;
+  }
+  .innerfooter {
+    flex-direction: column;
+  }
+
+  .f11 h3 {
+    font-family: Geomanist, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #ffffff;
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer {
+    padding: 0px;
+    height: 1500px;
+  }
+  .innerfooter {
+    flex-direction: column;
+  }
+
+  .f11 h3 {
+    font-family: Geomanist, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #ffffff;
+    padding: 0px;
+  }
+}
