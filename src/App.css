@@ -1,144 +1,142 @@
 * {
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  body {
-    background-color: rgb(222, 222, 222);
-  }
-  
-  
-  .hamburger-icon {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(222, 222, 222);
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  flex: 1;
+  height: 100px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#logo_img {
+  width: 160px;
+  height: 100px;
+}
+
+.between {
+  flex: 1;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 3;
+  height: 100px;
+}
+
+.mitem {
+  flex: 5;
+
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px 40px 0px;
+
+  margin-left: 20px;
+}
+
+.ullist {
+  display: flex;
+  width: 750px;
+  height: 101px;
+  align-items: center;
+}
+.menublock {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+.menublockinside {
+  display: flex;
+  border-top: 1px solid #d3d3d3;
+  width: 1370px;
+  height: 380px;
+}
+.leftMblock {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 380px;
+}
+.middleMblock {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 380px;
+}
+
+.rightMblock {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 380px;
+  justify-content: right;
+}
+.block2text {
+  color: #0d016b;
+  font-weight: 500;
+}
+.block2text:hover {
+  transform: 2s;
+  color: #a20fc2;
+}
+@media only screen and (max-width: 480px) {
+  .ullist {
     display: none;
   }
-  
-  .logo {
-    display: flex;
-    flex: 1;
-    height: 100px;
-    justify-content: center;
-    cursor: pointer;
-  }
-  
+
   #logo_img {
-    width: 160px;
-    height: 100px;
+    width: 130px;
+    height: 80px;
   }
-  
-  .between {
+  .logo {
+    align-items: center;
+  }
+
+  .hamburger-icon {
     flex: 1;
-  }
-  
-  .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 3;
-    height: 100px;
-  }
-  
-  .mitem {
-    flex: 5;
-  
-    display: flex;
-    justify-content: center;
-    padding: 40px 0px 40px 0px;
-  
-    margin-left: 20px;
-  }
-  
-  .ullist {
-    display: flex;
-    width: 750px;
-    height: 101px;
-    align-items: center;
+    display: block;
   }
   .menublock {
-    display: flex;
-    justify-content: center;
+    border-top: 1px solid #d3d3d3;
     width: 100%;
+    height: 450px;
     background-color: white;
   }
-  .menublockinside {
-    display: flex;
-    border-top: 1px solid #d3d3d3;
-    width: 1370px;
-    height: 380px;
+  .menublock {
+    display: none;
   }
-  .leftMblock {
-    display: flex;
-    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .ullist {
+    display: none;
+  }
+
+  #logo_img {
+    width: 130px;
+    height: 80px;
+  }
+  .logo {
+    align-items: center;
+  }
+  .hamburger-icon {
     flex: 1;
-    height: 380px;
+    display: block;
   }
-  .middleMblock {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    height: 380px;
+  .menublock {
+    display: none;
   }
-  
-  .rightMblock {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    height: 380px;
-    justify-content: right;
-  }
-  .block2text {
-    color: #0d016b;
-    font-weight: 500;
-  }
-  .block2text:hover {
-    transform: 2s;
-    color: #a20fc2;
-  }
-  @media only screen and (max-width: 480px) {
-    .ullist {
-      display: none;
-    }
-  
-    #logo_img {
-      width: 130px;
-      height: 80px;
-    }
-    .logo {
-      align-items: center;
-    }
-  
-    .hamburger-icon {
-      flex: 1;
-      display: block;
-    }
-    .menublock {
-      border-top: 1px solid #d3d3d3;
-      width: 100%;
-      height: 450px;
-      background-color: white;
-    }
-    .menublock {
-      display: none;
-    }
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .ullist {
-      display: none;
-    }
-  
-    #logo_img {
-      width: 130px;
-      height: 80px;
-    }
-    .logo {
-      align-items: center;
-    }
-    .hamburger-icon {
-      flex: 1;
-      display: block;
-    }
-    .menublock {
-      display: none;
-    }
-  }
-  
+}

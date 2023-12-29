@@ -1,57 +1,51 @@
-
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-
 
 .header {
-    display: flex;
-    width: 100%;
-    height: 101px;
-    background-color: white;
-    align-items: center;
-
+  display: flex;
+  width: 100%;
+  height: 101px;
+  background-color: white;
+  align-items: center;
 }
 
-.menudiv{
-    display: flex;
-    width: 100%;
-    height: 500px;
-    background-color: blue;
-    padding: 0px 350px 0px 350px;
-    position: absolute;
+.menudiv {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background-color: blue;
+  padding: 0px 350px 0px 350px;
+  position: absolute;
 }
 
-.menudivinner{
-    display: flex;
-    flex: 1;
-    background-color: yellow;
-
+.menudivinner {
+  display: flex;
+  flex: 1;
+  background-color: yellow;
 }
 
-.minner1{
-    flex:1;
-    background-color: red;
-    padding: 10px;
+.minner1 {
+  flex: 1;
+  background-color: red;
+  padding: 10px;
 }
 
-
-.minner2{
-    flex:1;
-    background-color: green;
-    padding: 10px;
+.minner2 {
+  flex: 1;
+  background-color: green;
+  padding: 10px;
 }
 
-
-.minner3{
-    flex:1;
-    background-color: pink;
-    padding: 10px;
+.minner3 {
+  flex: 1;
+  background-color: pink;
+  padding: 10px;
 }
 
-#menuItem{
-    color: #0D016B;
-    font-size: 16px;
-    font-weight: 700;
+#menuItem {
+  color: #0d016b;
+  font-size: 16px;
+  font-weight: 700;
 }

@@ -19,12 +19,12 @@ const data = [
     ],
     b3: {
       first_service: 'Staffing',
-      // image: staffingpic,
+      image: staffingpic,
       content:
         'We focus on Reliable Employees, Quality Relationships, Strategic Partnerships',
       status: true,
     },
-    blockheight: 450,
+    blockheight: 470,
   },
 
   {
@@ -37,12 +37,12 @@ const data = [
     b2: ['Overview', 'Leadership', 'News Room'],
     b3: {
       first_service: 'Overview',
-      // image: aboutus,
+      image: aboutus,
       content:
         'Global Enterprises to be Future-Ready with a Generative AI Centre of Excellence',
       status: true,
     },
-    blockheight: 450,
+    blockheight: 440,
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ const data = [
       content: '',
       status: false,
     },
-    blockheight: 300,
+    blockheight: 400,
   },
   {
     id: 5,
