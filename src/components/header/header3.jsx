@@ -24,6 +24,8 @@ const Navbar = () => {
 
   const [menu, setMenu] = useState(menuItems)
 
+  const [width, setWidth] = useState(1080)
+
   const setArrowStatus = (id) => {
     setMenu(
       menu.map((each) => {
@@ -62,52 +64,69 @@ const Navbar = () => {
             )
           })}
         </div>
-        <div
-          className='hamburger-icon'
-          onClick={() => {
-            setMenu(menuItems)
-            setOpen(!isOpen)
-          }}
-        >
+        <div className='hamburger-icon' onClick={() => setMenu(menuItems)}>
           <Hamburger id='hg' toggled={isOpen} toggle={setOpen} />
         </div>
       </div>
       <>
         <MenuData id={id} val={val} setFun={setVal} />
       </>
-      {isOpen ? (
-        <div className='navhidden-mobile'>
-          {menu.map((each) => {
-            const { id, name, arrow } = each
-            return (
-              <div
-                key={id}
-                style={{
-                  display: 'flex',
-                  flex: '1',
-                  alignItems: 'center',
-                  borderBottom: '1px solid lightgray',
-                }}
-              >
+      <div
+        className='navhidden-mobile-out'
+        style={{ display: width >= 1080 ? 'none' : '' }}
+      >
+        {isOpen ? (
+          <div
+            style={{ display: 'flex', flexDirection: 'column' }}
+            className='navhidden-mobile'
+          >
+            {menu.map((each) => {
+              const { id, name, arrow } = each
+              return (
                 <div
                   style={{
-                    flex: '90%',
+                    flex: '1',
                     display: 'flex',
+                    alignItems: 'center',
                     justifyContent: 'center',
+                    borderBottom: '1px solid lightgray',
                   }}
+                  key={name}
                 >
-                  {name}
+                  <div
+                    style={{
+                      flex: '95%',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      fontWeight: '700',
+                      color: '#0d016b',
+                    }}
+                  >
+                    {name}
+                  </div>
+                  <div
+                    style={{
+                      flex: '5%',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      paddingRight: '10px',
+                    }}
+                    onClick={() => setArrowStatus(id)}
+                  >
+                    {arrow ? (
+                      <KeyboardArrowUpIcon />
+                    ) : (
+                      <KeyboardArrowDownIcon />
+                    )}
+                  </div>
                 </div>
-                <div onClick={() => setArrowStatus(id)} style={{ flex: '10%' }}>
-                  {arrow ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      ) : (
-        ''
-      )}
+              )
+            })}
+          </div>
+        ) : (
+          ''
+        )}
+      </div>
     </>
   )
 }

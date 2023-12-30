@@ -1,151 +1,118 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.navbar {
+.image-container {
   position: relative;
-  display: flex;
-  height: 100px;
-  width: 100%;
-  box-shadow: 0px 0px 8px 5px rgba(131, 131, 131, 0.2);
-  align-items: center;
-  background-color: white;
 }
 
-.nav-hidden {
-  display: flex;
+.main-bg {
+  position: relative;
+  width: 100%;
+  height: 630px;
+}
+
+.text-content {
   position: absolute;
-  width: 100%;
-  height: 500px;
-  background-color: white;
-  z-index: 100;
-  border-top: 1px solid lightgray;
+  width: 600px;
+  z-index: 99;
+  left: 150px;
+  top: 120px;
 }
 
-.navbar .brand-logo {
-  display: flex;
-  flex: 3;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar .brand-logo #logo {
-  width: 130px;
-}
-
-.navbar .menu {
-  display: flex;
-  flex: 5;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #0d016b;
-  margin-left: 22px;
-  font-family: Whitney, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  padding: 30px 10px 40px 10px;
-  cursor: pointer;
-}
-.menu a:hover {
-  border-top: 4px solid white;
-  border-bottom: 4px solid red;
-  color: '#A20FB7';
-}
-
-.minner1 {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 50px 20px 50px 20px;
-  margin-left: 120px;
-}
-
-.minner2 {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 25px 20px 50px 20px;
-}
-
-.minner3 {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  margin-right: 120px;
-  padding: 40px 0px 100px 100px;
-}
-
-.servicelist {
-  padding: 25px 10px 25px 10px;
-  border-bottom: 1px solid lightgray;
-  font-size: 19.008px;
-  font-weight: 400;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-span#service {
-  color: #0d016b;
-}
-
-span#service:hover {
-  color: #a20fb7;
-  cursor: pointer;
-}
-
-.navhidden-mobile {
+.text-content2 {
   display: none;
 }
 
+p {
+  font-family: Geomanist, Helvetica, Arial, sans-serif;
+  font-size: 51.008px;
+  margin-bottom: 20px;
+  font-weight: -2;
+  line-height: 60.1894px;
+  color: #0d016b;
+}
+
+h2 {
+  font-family: Geomanist, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #a20fb7;
+  margin-bottom: 20px;
+}
+
+.action-button {
+  background-color: #f8e9ff;
+  margin-top: 20px;
+  color: #a20fb7;
+  padding: 10px 20px;
+  border-color: #a20fb7;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #1a237e;
+  color: white;
+}
+
+#full-width-image {
+  width: 100%;
+}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
-
-  .navbar {
-    position: relative;
-    display: flex;
-    height: 100px;
-    width: 100%;
-    box-shadow: 0px 0px 8px 5px rgba(131, 131, 131, 0.2);
-    align-items: center;
-    background-color: white;
-    border-bottom: 1px solid lightgray;
-  }
-
-  .navbar .menu {
+  .text-content {
     display: none;
   }
 
-  .navbar .brand-logo {
-    justify-content: left;
-    padding-left: 10px;
-  }
-
-  .navbar .brand-logo #logo {
-    width: 100px;
-  }
-
-  .navbar .hamburger-icon {
-    display: flex;
-    flex: 0.2;
-    justify-content: right;
-    display: block;
-    padding-right: 20px;
-  }
-
-  .navhidden-mobile {
-    position: absolute;
+  .main-bg {
+    position: relative;
     width: 100%;
-    height: 400px;
+    height: 280px;
+    background-position: center;
+  }
+
+  p {
+    font-family: Geomanist, Helvetica, Arial, sans-serif;
+    font-size: 20.008px;
+    margin-bottom: 20px;
+    font-weight: -2;
+    line-height: 60.1894px;
+    color: #0d016b;
+  }
+
+  .text-content2 {
     display: block;
-    z-index: 99;
-    display: flex;
     background-color: white;
-    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text-content2 p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+  .action-button {
+    background-color: white;
+    margin-top: 5px;
+    color: #a20fb7;
+    padding: 10px 20px;
+    border-color: #a20fb7;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+
+  h2 {
+    font-family: Geomanist, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 10px;
+    color: #a20fb7;
   }
 }
 
@@ -162,94 +129,110 @@ span#service:hover {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */
-  .navbar {
-    position: relative;
-    display: flex;
-    height: 100px;
-    width: 100%;
-    box-shadow: 0px 0px 8px 5px rgba(131, 131, 131, 0.2);
-    align-items: center;
-    background-color: white;
-    border-bottom: 1px solid lightgray;
-  }
-
-  .navbar .menu {
+  .text-content {
     display: none;
   }
-
-  .navbar .brand-logo {
-    justify-content: left;
-    padding-left: 30px;
-  }
-
-  .navbar .brand-logo #logo {
-    width: 120px;
-  }
-
-  .navbar .hamburger-icon {
-    display: flex;
-    flex: 0.2;
-    justify-content: right;
-    display: block;
-    padding-right: 20px;
-  }
-
-  .navhidden-mobile {
-    position: absolute;
+  .main-bg {
+    position: relative;
     width: 100%;
-    height: 400px;
+    height: 280px;
+    background-position: center;
+  }
+  p {
+    font-family: Geomanist, Helvetica, Arial, sans-serif;
+    font-size: 20.008px;
+    margin-bottom: 20px;
+    font-weight: -2;
+    line-height: 60.1894px;
+    color: #0d016b;
+  }
+  .text-content2 {
     display: block;
-    z-index: 99;
     background-color: white;
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text-content2 p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+  .action-button {
+    background-color: white;
+    margin-top: px;
+    color: #a20fb7;
+    padding: 10px 20px;
+    border-color: #a20fb7;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  h2 {
+    font-family: Geomanist, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #a20fb7;
+    margin-bottom: 20px;
   }
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* Styles */
-  .navbar {
-    position: relative;
-    display: flex;
-    height: 100px;
-    width: 100%;
-    box-shadow: 0px 0px 8px 5px rgba(131, 131, 131, 0.2);
-    align-items: center;
-    background-color: white;
-    border-bottom: 1px solid lightgray;
-  }
-
-  .navbar .menu {
+  .text-content {
     display: none;
   }
 
-  .navbar .brand-logo {
-    justify-content: left;
-    padding-left: 30px;
-  }
-
-  .navbar .brand-logo #logo {
-    width: 120px;
-  }
-
-  .navbar .hamburger-icon {
-    display: flex;
-    flex: 1.5;
-    justify-content: right;
-    padding-right: 30px;
-    display: block;
-  }
-
-  .navhidden-mobile {
-    position: absolute;
+  .main-bg {
+    position: relative;
     width: 100%;
-    height: 400px;
+    height: 280px;
+    background-position: center;
+  }
+
+  p {
+    font-family: Geomanist, Helvetica, Arial, sans-serif;
+    font-size: 20.008px;
+    margin-bottom: 20px;
+    font-weight: -2;
+    line-height: 60.1894px;
+    color: #0d016b;
+  }
+  .text-content2 {
     display: block;
-    z-index: 99;
     background-color: white;
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text-content2 p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+  .action-button {
+    background-color: white;
+    margin-top: 5px;
+    color: #a20fb7;
+    padding: 10px 20px;
+    border-color: #a20fb7;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+
+  h2 {
+    font-family: Geomanist, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #a20fb7;
   }
 }
 
