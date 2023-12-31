@@ -25,6 +25,41 @@ const HomePage = () => {
           <TextContent2 />
         </div>
       </section>
+      <section className='content-section'>
+        <div className='content-1'>
+          <h1>Where fearless ideas deliver exceptional value</h1>
+          <p>
+            Unlock new business opportunities, accelerate time to market, and
+            forge unwavering customer loyalty with Accolite. From Generative AI
+            and cloud technology, to deeply experienced digital engineering and
+            advanced data strategy, our global team customizes state-of-the-art
+            solutions to your most complex challenges.
+          </p>
+          <h2>
+            Customer satisfaction drives us. Fearless thinking empowers us.
+            Flawless delivery defines us.
+          </h2>
+        </div>
+        <div className='content-2'>
+          <div className='sl1'>
+            <div>
+              <h2>Result That Matter</h2>
+            </div>
+            <img className='sliderimg' src={sliderimage1} alt='' />
+          </div>
+          <div className='sl1data'>
+            <h2>Staffing & Immigrations</h2>
+            <h1>
+              Resolving inefficiencies in call logging for a leading telco
+            </h1>
+            <br></br>
+            <span>
+              The Client is leading immigrations and staffing with latest
+              policies
+            </span>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
