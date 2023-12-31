@@ -21,7 +21,7 @@ const Navbar = () => {
         'Customer Experience & Design',
         'Digital Products Engineering',
       ],
-      blockHeight: 200,
+      blockHeight: 280,
     },
     {
       id: 3,
@@ -65,14 +65,6 @@ const Navbar = () => {
         'Digital Products Engineering',
       ],
     },
-  ]
-
-  const menuData = [
-    'Staffing',
-    'Immigrations',
-    'IT Recuritment',
-    'Customer Experience & Design',
-    'Digital Products Engineering',
   ]
 
   const [id, setId] = useState('')
@@ -160,6 +152,7 @@ const Navbar = () => {
                   >
                     {name}
                   </div>
+
                   <div
                     onClick={() => setArrowStatus(id)}
                     style={{ flex: '10%' }}
@@ -189,6 +182,8 @@ const Navbar = () => {
                             alignItems: 'center',
                             padding: '10px 10px 10px 20px',
                             borderBottom: '1px solid lightgray',
+                            fontWeight: '500',
+                            color: '#0d016b',
                           }}
                         >
                           {each}
