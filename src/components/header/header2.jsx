@@ -4,16 +4,75 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import Hamburger from 'hamburger-react'
 import MenuData from './menudata'
-import { useEffect, useState, useRef } from 'react'
+import { useState } from 'react'
 
 const Navbar = () => {
   const menuItems = [
-    { id: 1, name: 'Home', status: false, arrow: false },
-    { id: 2, name: 'What We Do', status: false, arrow: false },
-    { id: 3, name: 'About Us', status: false, arrow: false },
-    { id: 4, name: 'Careers', status: false, arrow: false },
-    { id: 5, name: 'Blog', status: false, arrow: false },
-    { id: 6, name: 'Contact', status: false, arrow: false },
+    { id: 1, name: 'Home', status: false, arrow: false, data: [] },
+    {
+      id: 2,
+      name: 'What We Do',
+      status: false,
+      arrow: false,
+      data: [
+        'Staffing',
+        'Immigrations',
+        'IT Recuritment',
+        'Customer Experience & Design',
+        'Digital Products Engineering',
+      ],
+      blockHeight: 200,
+    },
+    {
+      id: 3,
+      name: 'About Us',
+      status: false,
+      arrow: false,
+      data: ['Overview', 'Leardership', 'Newsroom'],
+      blockHeight: 150,
+    },
+    {
+      id: 4,
+      name: 'Careers',
+      status: false,
+      arrow: false,
+      data: ['Overview', 'Open Positions'],
+      blockHeight: 100,
+    },
+    {
+      id: 5,
+      name: 'Blog',
+      status: false,
+      arrow: false,
+      data: [
+        'Staffing',
+        'Immigrations',
+        'IT Recuritment',
+        'Customer Experience & Design',
+        'Digital Products Engineering',
+      ],
+    },
+    {
+      id: 6,
+      name: 'Contact',
+      status: false,
+      arrow: false,
+      data: [
+        'Staffing',
+        'Immigrations',
+        'IT Recuritment',
+        'Customer Experience & Design',
+        'Digital Products Engineering',
+      ],
+    },
+  ]
+
+  const menuData = [
+    'Staffing',
+    'Immigrations',
+    'IT Recuritment',
+    'Customer Experience & Design',
+    'Digital Products Engineering',
   ]
 
   const [id, setId] = useState('')
@@ -78,30 +137,69 @@ const Navbar = () => {
       {isOpen ? (
         <div className='navhidden-mobile'>
           {menu.map((each) => {
-            const { id, name, arrow } = each
+            const { id, name, arrow, data, blockHeight } = each
             return (
-              <div
-                key={id}
-                style={{
-                  display: 'flex',
-                  flex: '1',
-                  alignItems: 'center',
-                  borderBottom: '1px solid lightgray',
-                }}
-              >
+              <>
                 <div
+                  key={id}
                   style={{
-                    flex: '90%',
                     display: 'flex',
-                    justifyContent: 'center',
+                    flex: '1',
+                    alignItems: 'center',
+                    borderBottom: '1px solid lightgray',
                   }}
                 >
-                  {name}
+                  <div
+                    style={{
+                      flex: '90%',
+                      display: 'flex',
+                      paddingLeft: '20px',
+                      fontWeight: '700',
+                      color: arrow ? '#a20fb7' : '#0d016b',
+                    }}
+                  >
+                    {name}
+                  </div>
+                  <div
+                    onClick={() => setArrowStatus(id)}
+                    style={{ flex: '10%' }}
+                  >
+                    {arrow ? (
+                      <KeyboardArrowUpIcon />
+                    ) : (
+                      <KeyboardArrowDownIcon />
+                    )}
+                  </div>
                 </div>
-                <div onClick={() => setArrowStatus(id)} style={{ flex: '10%' }}>
-                  {arrow ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-                </div>
-              </div>
+                {arrow && data.length ? (
+                  <div
+                    style={{
+                      width: '100%',
+                      height: blockHeight,
+                      display: 'flex',
+                      flexDirection: 'column',
+                    }}
+                  >
+                    {data.map((each) => {
+                      return (
+                        <div
+                          style={{
+                            flex: '1',
+                            display: 'flex',
+                            alignItems: 'center',
+                            padding: '10px 10px 10px 20px',
+                            borderBottom: '1px solid lightgray',
+                          }}
+                        >
+                          {each}
+                        </div>
+                      )
+                    })}
+                  </div>
+                ) : (
+                  ''
+                )}
+              </>
             )
           })}
         </div>
