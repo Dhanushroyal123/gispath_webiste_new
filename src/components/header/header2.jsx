@@ -14,14 +14,8 @@ const Navbar = () => {
       name: 'What We Do',
       status: false,
       arrow: false,
-      data: [
-        'Staffing',
-        'Immigrations',
-        'IT Recuritment',
-        'Customer Experience & Design',
-        'Digital Products Engineering',
-      ],
-      blockHeight: 280,
+      data: ['Staffing', 'Immigrations', 'IT Recuritment'],
+      blockHeight: 150,
     },
     {
       id: 3,
@@ -44,26 +38,14 @@ const Navbar = () => {
       name: 'Blog',
       status: false,
       arrow: false,
-      data: [
-        'Staffing',
-        'Immigrations',
-        'IT Recuritment',
-        'Customer Experience & Design',
-        'Digital Products Engineering',
-      ],
+      data: [],
     },
     {
       id: 6,
       name: 'Contact',
       status: false,
       arrow: false,
-      data: [
-        'Staffing',
-        'Immigrations',
-        'IT Recuritment',
-        'Customer Experience & Design',
-        'Digital Products Engineering',
-      ],
+      data: [],
     },
   ]
 
